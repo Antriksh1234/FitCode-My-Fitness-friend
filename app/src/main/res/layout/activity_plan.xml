@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".PlanActivity">
+
+    <Toolbar
+        android:id="@+id/plan_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#241E47"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:letterSpacing="0.1"
+            android:text="Choose your plan"
+            android:textAllCaps="true"/>
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="CHOOSE YOUR MODE"
+        android:textColor="#FFF"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@id/plan_toolbar"/>
+
+    <RadioGroup
+        android:gravity="center"
+        android:id="@+id/moderadiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_below="@id/textView5">
+
+        <RadioButton
+            android:id="@+id/beginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner"
+            android:checked="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/advanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:text="CHOOSE YOUR DURATION"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+       android:layout_below="@id/moderadiogroup"/>
+
+    <RadioGroup
+        android:id="@+id/dayradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView6"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/duration_fifteen_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 days"
+            android:checked="true"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/duration_thirty_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 days"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/duration_fortyfive_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45 days"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/duration_sixty_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="60 days"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/duration_ninety_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="90 days"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/changePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change my regime"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/main_activity_bg"
+        android:onClick="EditPlan"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayradiogroup"
+        android:layout_below="@id/dayradiogroup"/>
+
+</RelativeLayout>

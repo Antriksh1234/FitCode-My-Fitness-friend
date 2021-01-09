@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="8dp"
+    android:background="#241E47">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Lets workout"
+            android:textAllCaps="true"
+            android:textSize="19sp"/>
+
+    </RelativeLayout>
+
+</Toolbar>

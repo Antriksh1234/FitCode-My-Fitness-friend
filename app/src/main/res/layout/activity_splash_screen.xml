@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/splash_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fitnesssplash4"/>
+
+        <LinearLayout
+            android:id="@+id/splash_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/app_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_heading"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/sub_heading"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitter than yesterday"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/splash_view"
+            android:layout_width="10dp"
+            android:layout_height="90dp"
+            android:background="#00E676"
+            android:layout_toStartOf="@id/splash_linear_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

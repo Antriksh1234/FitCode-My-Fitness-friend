@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FitCode - My Fitness friend</string>
+    <string name="splash_heading">FitCode</string>
+    <string name="your_weight_in_kg">Your Weight (in kg)</string>
+    <string name="your_height_in_cm">Your height (in cm)</string>
+    <string name="save">Save</string>
+    <string name="video_text"><u>Not getting the best results? Check out videos and diet tips here</u></string>
+</resources>

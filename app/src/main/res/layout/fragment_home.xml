@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_start_workout"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fitnesssplash2"
+            android:alpha="0.93"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:text="Start training"
+            android:letterSpacing="0.2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/workout_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_start_workout"
+        android:textColor="@color/white"
+        android:text="Your plan - Beginner for 15 days"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:textAllCaps="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_days"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
+        android:layout_below="@id/workout_description"
+        tools:listitem="@layout/day_item"/>
+
+
+</RelativeLayout>
