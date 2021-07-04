@@ -14,7 +14,7 @@ An Android fitness app that lets you decide your fitness regime by choosing your
 
 
 ## Features
-The features of hhe app include-
+The features of the app include-
 1. Get to choose between begineer and internediate plan for the duration of 15, 30, 45, 60 or 90 days, whichever suits you the best.
 2. Get to know your consistency level in the current fitness program.
 3. Get to workout with 10 simple exercises that do not nedd any equipment.
